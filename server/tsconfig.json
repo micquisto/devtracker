@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    // WHY ES2020? Modern JS features — perfect for Node.js 20+
+    "target": "ES2020",
+
+    // WHY commonjs? Node.js uses CommonJS module system
+    "module": "commonjs",
+
+    // WHY strict? Enables ALL TypeScript safety checks — best practice!
+    "strict": true,
+
+    // WHY esModuleInterop? Lets you import CommonJS libs with ES6 syntax
+    "esModuleInterop": true,
+
+    // WHY skipLibCheck? Speeds up compilation by skipping type-checking of libraries
+    "skipLibCheck": true,
+
+    // WHY outDir? Compiled JS files go into /dist folder (keeps project clean)
+    "outDir": "./dist",
+
+    // WHY rootDir? Tells TypeScript where your source files live
+    "rootDir": "./src",
+
+    // WHY resolveJsonModule? Allows importing .json files directly
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
